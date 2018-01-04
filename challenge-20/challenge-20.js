@@ -8,6 +8,8 @@ a marcação criada nele para fazer nosso desafio ;)
 O HTML NÃO PODE ser alterado!
 */
 
+(function(window, document){
+
 /*
 Ao carregar a página, pergunte ao usuário "Qual o seu nome?". Atribua o
 resultado à uma variável chamada `username`. Se o usuário não digitar um
@@ -104,4 +106,5 @@ Alguns e-mails inválidos:
     - "rita-marica@titica.a.b"
     - "agua_@evida.br.com"
 */
-// ?
+
+})();
