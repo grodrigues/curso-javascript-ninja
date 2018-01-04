@@ -129,11 +129,10 @@ Alguns e-mails válidos que podem ser usados para testar:
 
 Alguns e-mails inválidos:
     - "walter-da-silva@maraca.br"
-    - "rita-marica@titica.a.b"
+    - "rita-marica@titica.com.br"
     - "agua_@evida.br.com"
 */
 function isValidEmail (){
-    //return /[^.]+@\w+\.\w{2,}(?:\.\w{2})?$/.test(email);
 };
 
 })(window, document);
