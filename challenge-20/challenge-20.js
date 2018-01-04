@@ -8,7 +8,7 @@ a marcação criada nele para fazer nosso desafio ;)
 O HTML NÃO PODE ser alterado!
 */
 
-(function(window, document){
+(function(win, doc){
     'use strict';
 /*
 Ao carregar a página, pergunte ao usuário "Qual o seu nome?". Atribua o
@@ -17,7 +17,8 @@ nome, `username` deve receber "Desconhecido".
 Com a resposta, mostre um alert com a mensagem "Bem vindo [USERNAME]!"
 */
 // ?
-var username = prompt('Qual o seu nome?');
+var username = prompt('Qual o seu nome? ') || 'Desconhecido';
+alert('Bem vindo ' + username );
 
 /*
 Agora, pergunte ao usuário "Qual o seu e-mail?", atribuindo o resultado à
@@ -25,35 +26,46 @@ uma variável chamada `email`.
 */
 // ?
 
+var email = prompt('Qual o seu e-mail?') || 'Não tem Email';
+alert('seu email' + '' + email );
+
 /*
 - Selecione o input de "Nome", atribuindo-o à uma variável chamada
 `$inputUsername`.
 */
-// ?
+
+var $inputUsername = document.querySelector('[type="text"]');
+console.log($inputUsername);
 
 /*
 - Selecione o input de "Email", atribuindo-o à uma variável chamada
 `$inputEmail`.
 */
-// ?
+var $inputEmail = document.querySelector('[type="email"]');
+console.log($inputEmail);
 
 /*
 - Selecione o campo de "Mensagem", atribuindo-o à uma variável chamada
 `$message`.
 */
-// ?
+
+var $message = document.querySelector('textarea');
+console.log($message);
 
 /*
 - Selecione o botão de envio do formulário, atribuindo-o à uma variável
 chamada `$button`.
 */
-// ?
-
+var $button = document.querySelector('button');
+console.log($button);
 /*
 Preencha os campos de "Nome" e "Email" que estão no documento com os valores
 entrados pelo usuário.
 */
 // ?
+
+$inputUsername.value = username;
+$inputEmail.value = email;
 
 /*
 Adicione um listener de evento de click ao botão que faça o seguinte:
